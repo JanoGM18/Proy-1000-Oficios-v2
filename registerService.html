@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Registrar Servicio | 1000 Oficios</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/common/icono.png">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/registerService.css">
+</head>
+<body>
+
+	<div id="c-loader">
+		<img src="images/common/loader.gif" />
+	</div><!--c-loader-->
+
+	<div class="container-registerService">
+
+		<div class="form-container">
+
+			<div class="form-container-inner">
+
+				<div class="f-row-separator">
+					<span>Datos del Servicio</span>
+				</div><!--f-row-separator-->
+
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtTitle">Título</label>
+							<input type="title" id="txtTitle" class="input" maxlength="50" />
+							<span class="msg-error">La contraseña debe tener 10 caracteres como máximo.</span>
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
+
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtDescription">Descripción</label>
+							<textarea name="txtDescription" cols="40" rows="5"></textarea>
+
+							<span class="msg-error">La contraseña debe tener 10 caracteres como máximo.</span>
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
+
+				<div class="f-row f-multiple-errors f-errors-mobile">
+					
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtService">Servicio</label>
+									<!-- <input type="text" id="txtExpiryYear" class="input"/> -->
+									<select name="" id="cboService" class="input">
+										<option value="">-- Seleccione --</option>
+										<option value="1">Gasfitero</option>
+										<option value="2">Pintor</option>
+										<option value="3">Electricista</option>
+										<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+									</select>
+							<span class="msg-error">La contraseña debe tener 10 caracteres como máximo.</span>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+
+				</div><!--f-row-->
+
+				<div class="f-row f-errors-web">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<span class="msg-error">La contraseña2 debe.....</span>
+							<span class="msg-error">La confirmación2 debe...</span>
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
+
+				<div class="f-row-separator"></div><!--f-row-separator-->
+
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-buttons">
+							<button class="btnOk">Registrar Servicio</button>
+						</div>
+					</div><!--f-col-multiple-->
+				</div><!--f-row-->
+
+			</div><!--form-container-inner-->
+
+			<div class="form-shadow"></div><!--form-shadow-->
+		</div><!--form-container-->
+		
+	</div><!--container-registerService-->
+
+	<script src="js/libraries/jquery-3.3.1.min.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/registerService.js"></script>
+</body>
+</html>
